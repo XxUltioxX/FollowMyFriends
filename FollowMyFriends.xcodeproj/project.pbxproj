@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C09483E162D21A679FE39FC /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB133882E1CFF47C8818E0B7 /* LogView.swift */; };
+		1A9EBB64F80242E5846F1CB4 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F79B7636844B6E6889D764 /* AppSettings.swift */; };
+		20F4E990BE6756FB14362869 /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D25B31EE31235239F8605C /* SettingsSection.swift */; };
+		2D4ED9D3B7FD9DBF09B04B17 /* DetailPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C8031048EDADC9F819B5F9 /* DetailPanel.swift */; };
+		308BEE37D090B77BD3D2ADEA /* TrackedPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959C1436C26B476154388A2F /* TrackedPerson.swift */; };
+		3554C7CBB1A6CA88453A448B /* FindMyLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F78775FC54756A38213D07 /* FindMyLauncher.swift */; };
+		364BB6363CF4EE777AFBCD7D /* FindMyDecryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D855EC01381D2749BED35042 /* FindMyDecryptor.swift */; };
+		3A258B8F6FD44EDA35BAC482 /* MQTTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1011CB86759E8D5D1C6F2B28 /* MQTTService.swift */; };
+		4BFB97828275B9F0EC6CF41E /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF5D34EFAB614B82BE6626A /* DashboardView.swift */; };
+		594955460BAFBBD15F6EF21F /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B9537E3EEA5899783CB686 /* PeopleView.swift */; };
+		5C768D6514AEBE9401369F9A /* WALWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEBA7CD0606D6529158BEC1 /* WALWatcher.swift */; };
+		5C8AC9F420BC04C68C4D3511 /* TrackingScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D9238E2C9840063842808 /* TrackingScheduler.swift */; };
+		5D04E7ADCF859C94F613EC3F /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60361316FF110EC441BF95A6 /* MainWindow.swift */; };
+		5E3692E2FA769FF06E07E85F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B93020DD8729CC56FBA7FF25 /* Assets.xcassets */; };
+		5FD2AB35160DF17BB46BAD35 /* FollowMyFriendsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1981BB9DDAFC43EC3A3EB5 /* FollowMyFriendsApp.swift */; };
+		6E0D046C9007E8597B7AC669 /* LocationUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0606256C27AC4041C758939A /* LocationUpdate.swift */; };
+		7031E7BA422D49D020884E96 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C7046D706CBF1C5C7B438E /* AppState.swift */; };
+		787F7736331327E4BB518625 /* LogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025B3E814A5B7DA7BBC4F63C /* LogEntry.swift */; };
+		85466DECB6F83D134B001F02 /* BplistParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC96DA776E7D3F3EF9B75C2 /* BplistParser.swift */; };
+		9761B43194FC95A849858C25 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D26167DC0574D67753BFA8 /* SidebarView.swift */; };
+		990809514EFC4DE13481EC52 /* WALMerger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17266AFDD2027B69BD4D4616 /* WALMerger.swift */; };
+		9C38EDC36D8F6CE0400D1220 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F46A699A6D4720AAD2DCC29 /* KeychainHelper.swift */; };
+		A6DAE137136C4B2DB14A353B /* LoginItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD60FC9C5689FDADBCAC6A9 /* LoginItemService.swift */; };
+		A98728D334B7E4C977B67DF4 /* DatabaseReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4343EB60AAA752F7EECBB254 /* DatabaseReader.swift */; };
+		AED9122813F901C4CC0F643E /* LogRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724BD5CC0ACF8884246FDF8 /* LogRow.swift */; };
+		B3CFDA1D152DBC8089DF7648 /* PersonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6D77CE802EAE33A09B296E /* PersonCard.swift */; };
+		C1F15E64C2BCFA8167AD3A5B /* CocoaMQTT in Frameworks */ = {isa = PBXBuildFile; productRef = E48C1FF39DF4FD3BA681BA4B /* CocoaMQTT */; };
+		C76A27FBDF834570830176FE /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBC9622345EC1B216D33B4E /* NotificationService.swift */; };
+		C76CEEF5DF26E423CC418F64 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A185C0A82A5CBC33FD63748 /* ColorExtension.swift */; };
+		CBDF01D5EFDB0D70CD2F19F1 /* MQTTStatusBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE48901B5638FBBF4D567463 /* MQTTStatusBadge.swift */; };
+		D43E4EB9D6678DD0CE0A857C /* NightModeBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD60127762E5275E63CD392 /* NightModeBanner.swift */; };
+		FE2376E08582BFE0DDA8B18E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5E0555A7A4CF8155A2ABA0 /* SettingsView.swift */; };
+		FEC52168F0C027691174AA91 /* PeopleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211BC5F6B580DB84437DDF3A /* PeopleRow.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00F78775FC54756A38213D07 /* FindMyLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyLauncher.swift; sourceTree = "<group>"; };
+		025B3E814A5B7DA7BBC4F63C /* LogEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEntry.swift; sourceTree = "<group>"; };
+		0606256C27AC4041C758939A /* LocationUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationUpdate.swift; sourceTree = "<group>"; };
+		1011CB86759E8D5D1C6F2B28 /* MQTTService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTService.swift; sourceTree = "<group>"; };
+		12D26167DC0574D67753BFA8 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		17266AFDD2027B69BD4D4616 /* WALMerger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WALMerger.swift; sourceTree = "<group>"; };
+		1AF5D34EFAB614B82BE6626A /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		211BC5F6B580DB84437DDF3A /* PeopleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleRow.swift; sourceTree = "<group>"; };
+		2F1981BB9DDAFC43EC3A3EB5 /* FollowMyFriendsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowMyFriendsApp.swift; sourceTree = "<group>"; };
+		34B9537E3EEA5899783CB686 /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
+		3A185C0A82A5CBC33FD63748 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		3C11CEC4ADFFCA3793FBB161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4343EB60AAA752F7EECBB254 /* DatabaseReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseReader.swift; sourceTree = "<group>"; };
+		4BD60127762E5275E63CD392 /* NightModeBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightModeBanner.swift; sourceTree = "<group>"; };
+		50998CC8DBA1803ED7264600 /* FollowMyFriends.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FollowMyFriends.entitlements; sourceTree = "<group>"; };
+		5B5E0555A7A4CF8155A2ABA0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		60361316FF110EC441BF95A6 /* MainWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
+		65D25B31EE31235239F8605C /* SettingsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
+		6CBC9622345EC1B216D33B4E /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		6F46A699A6D4720AAD2DCC29 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		6FD60FC9C5689FDADBCAC6A9 /* LoginItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItemService.swift; sourceTree = "<group>"; };
+		840D9238E2C9840063842808 /* TrackingScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingScheduler.swift; sourceTree = "<group>"; };
+		8DC96DA776E7D3F3EF9B75C2 /* BplistParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BplistParser.swift; sourceTree = "<group>"; };
+		959C1436C26B476154388A2F /* TrackedPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackedPerson.swift; sourceTree = "<group>"; };
+		95C8031048EDADC9F819B5F9 /* DetailPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPanel.swift; sourceTree = "<group>"; };
+		9D6D77CE802EAE33A09B296E /* PersonCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCard.swift; sourceTree = "<group>"; };
+		B93020DD8729CC56FBA7FF25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1C7046D706CBF1C5C7B438E /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		D855EC01381D2749BED35042 /* FindMyDecryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyDecryptor.swift; sourceTree = "<group>"; };
+		DB133882E1CFF47C8818E0B7 /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
+		DF8254719839DDC00240C95A /* FollowMyFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FollowMyFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2F79B7636844B6E6889D764 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		ECEBA7CD0606D6529158BEC1 /* WALWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WALWatcher.swift; sourceTree = "<group>"; };
+		EE48901B5638FBBF4D567463 /* MQTTStatusBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTStatusBadge.swift; sourceTree = "<group>"; };
+		F724BD5CC0ACF8884246FDF8 /* LogRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogRow.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F851ABD7E281249CDA804553 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1F15E64C2BCFA8167AD3A5B /* CocoaMQTT in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05D154E318A7DF346B0BA74A /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				95C8031048EDADC9F819B5F9 /* DetailPanel.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		0C2DB03CFF44AFD453B1B59B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8DC96DA776E7D3F3EF9B75C2 /* BplistParser.swift */,
+				4343EB60AAA752F7EECBB254 /* DatabaseReader.swift */,
+				D855EC01381D2749BED35042 /* FindMyDecryptor.swift */,
+				00F78775FC54756A38213D07 /* FindMyLauncher.swift */,
+				6F46A699A6D4720AAD2DCC29 /* KeychainHelper.swift */,
+				6FD60FC9C5689FDADBCAC6A9 /* LoginItemService.swift */,
+				1011CB86759E8D5D1C6F2B28 /* MQTTService.swift */,
+				6CBC9622345EC1B216D33B4E /* NotificationService.swift */,
+				840D9238E2C9840063842808 /* TrackingScheduler.swift */,
+				17266AFDD2027B69BD4D4616 /* WALMerger.swift */,
+				ECEBA7CD0606D6529158BEC1 /* WALWatcher.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		26081DEBFDB6493B0DB2142A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3A185C0A82A5CBC33FD63748 /* ColorExtension.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		2B747CC87A736DCAA18515F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E2F79B7636844B6E6889D764 /* AppSettings.swift */,
+				0606256C27AC4041C758939A /* LocationUpdate.swift */,
+				025B3E814A5B7DA7BBC4F63C /* LogEntry.swift */,
+				959C1436C26B476154388A2F /* TrackedPerson.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		33D561A8947DD27F1364BD7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF8254719839DDC00240C95A /* FollowMyFriends.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52F950DC81AC6F7C98B274F1 /* Logs */ = {
+			isa = PBXGroup;
+			children = (
+				F724BD5CC0ACF8884246FDF8 /* LogRow.swift */,
+				DB133882E1CFF47C8818E0B7 /* LogView.swift */,
+			);
+			path = Logs;
+			sourceTree = "<group>";
+		};
+		6ADD3ABB4DC77617E2AFDD4A /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				1AF5D34EFAB614B82BE6626A /* DashboardView.swift */,
+				4BD60127762E5275E63CD392 /* NightModeBanner.swift */,
+				9D6D77CE802EAE33A09B296E /* PersonCard.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		929D4564593456E87AA30FA3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				60361316FF110EC441BF95A6 /* MainWindow.swift */,
+				6ADD3ABB4DC77617E2AFDD4A /* Dashboard */,
+				05D154E318A7DF346B0BA74A /* Detail */,
+				52F950DC81AC6F7C98B274F1 /* Logs */,
+				F8A4EAA20B1CEF59BA9A7C35 /* People */,
+				B42376BC8AC32A524BC246F0 /* Settings */,
+				26081DEBFDB6493B0DB2142A /* Shared */,
+				E1F2F828F00EFF25F04A1AC1 /* Sidebar */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B42376BC8AC32A524BC246F0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				65D25B31EE31235239F8605C /* SettingsSection.swift */,
+				5B5E0555A7A4CF8155A2ABA0 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		BB562A5F8B72BC73BC44B807 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D1C7046D706CBF1C5C7B438E /* AppState.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D144FA8E4F02735CC887284B /* FollowMyFriends */ = {
+			isa = PBXGroup;
+			children = (
+				50998CC8DBA1803ED7264600 /* FollowMyFriends.entitlements */,
+				3C11CEC4ADFFCA3793FBB161 /* Info.plist */,
+				EB538C11190B8A79199D0F43 /* App */,
+				2B747CC87A736DCAA18515F0 /* Models */,
+				0C2DB03CFF44AFD453B1B59B /* Services */,
+				BB562A5F8B72BC73BC44B807 /* ViewModels */,
+				929D4564593456E87AA30FA3 /* Views */,
+			);
+			path = FollowMyFriends;
+			sourceTree = "<group>";
+		};
+		E1F2F828F00EFF25F04A1AC1 /* Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				EE48901B5638FBBF4D567463 /* MQTTStatusBadge.swift */,
+				12D26167DC0574D67753BFA8 /* SidebarView.swift */,
+			);
+			path = Sidebar;
+			sourceTree = "<group>";
+		};
+		EB538C11190B8A79199D0F43 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B93020DD8729CC56FBA7FF25 /* Assets.xcassets */,
+				2F1981BB9DDAFC43EC3A3EB5 /* FollowMyFriendsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F8A4EAA20B1CEF59BA9A7C35 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				211BC5F6B580DB84437DDF3A /* PeopleRow.swift */,
+				34B9537E3EEA5899783CB686 /* PeopleView.swift */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		FCC10BBE7F4B99E11EF08084 = {
+			isa = PBXGroup;
+			children = (
+				D144FA8E4F02735CC887284B /* FollowMyFriends */,
+				33D561A8947DD27F1364BD7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4F140F47E1DCA91003F3D68 /* FollowMyFriends */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C5C8FA7D36C0F55D0A75EC6 /* Build configuration list for PBXNativeTarget "FollowMyFriends" */;
+			buildPhases = (
+				4CB96F8E45B73D8AE35F8E3D /* Sources */,
+				3725A3FC861FB57940A847C8 /* Resources */,
+				F851ABD7E281249CDA804553 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FollowMyFriends;
+			packageProductDependencies = (
+				E48C1FF39DF4FD3BA681BA4B /* CocoaMQTT */,
+			);
+			productName = FollowMyFriends;
+			productReference = DF8254719839DDC00240C95A /* FollowMyFriends.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4EE28D14709C632AF1ED95E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					D4F140F47E1DCA91003F3D68 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 224C4041A01FFAA0A115FA24 /* Build configuration list for PBXProject "FollowMyFriends" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = FCC10BBE7F4B99E11EF08084;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E594F444A10B91EE6E49C723 /* XCRemoteSwiftPackageReference "CocoaMQTT" */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4F140F47E1DCA91003F3D68 /* FollowMyFriends */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3725A3FC861FB57940A847C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E3692E2FA769FF06E07E85F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CB96F8E45B73D8AE35F8E3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A9EBB64F80242E5846F1CB4 /* AppSettings.swift in Sources */,
+				7031E7BA422D49D020884E96 /* AppState.swift in Sources */,
+				85466DECB6F83D134B001F02 /* BplistParser.swift in Sources */,
+				C76CEEF5DF26E423CC418F64 /* ColorExtension.swift in Sources */,
+				4BFB97828275B9F0EC6CF41E /* DashboardView.swift in Sources */,
+				A98728D334B7E4C977B67DF4 /* DatabaseReader.swift in Sources */,
+				2D4ED9D3B7FD9DBF09B04B17 /* DetailPanel.swift in Sources */,
+				364BB6363CF4EE777AFBCD7D /* FindMyDecryptor.swift in Sources */,
+				3554C7CBB1A6CA88453A448B /* FindMyLauncher.swift in Sources */,
+				5FD2AB35160DF17BB46BAD35 /* FollowMyFriendsApp.swift in Sources */,
+				9C38EDC36D8F6CE0400D1220 /* KeychainHelper.swift in Sources */,
+				6E0D046C9007E8597B7AC669 /* LocationUpdate.swift in Sources */,
+				787F7736331327E4BB518625 /* LogEntry.swift in Sources */,
+				AED9122813F901C4CC0F643E /* LogRow.swift in Sources */,
+				0C09483E162D21A679FE39FC /* LogView.swift in Sources */,
+				A6DAE137136C4B2DB14A353B /* LoginItemService.swift in Sources */,
+				3A258B8F6FD44EDA35BAC482 /* MQTTService.swift in Sources */,
+				CBDF01D5EFDB0D70CD2F19F1 /* MQTTStatusBadge.swift in Sources */,
+				5D04E7ADCF859C94F613EC3F /* MainWindow.swift in Sources */,
+				D43E4EB9D6678DD0CE0A857C /* NightModeBanner.swift in Sources */,
+				C76A27FBDF834570830176FE /* NotificationService.swift in Sources */,
+				FEC52168F0C027691174AA91 /* PeopleRow.swift in Sources */,
+				594955460BAFBBD15F6EF21F /* PeopleView.swift in Sources */,
+				B3CFDA1D152DBC8089DF7648 /* PersonCard.swift in Sources */,
+				20F4E990BE6756FB14362869 /* SettingsSection.swift in Sources */,
+				FE2376E08582BFE0DDA8B18E /* SettingsView.swift in Sources */,
+				9761B43194FC95A849858C25 /* SidebarView.swift in Sources */,
+				308BEE37D090B77BD3D2ADEA /* TrackedPerson.swift in Sources */,
+				5C8AC9F420BC04C68C4D3511 /* TrackingScheduler.swift in Sources */,
+				990809514EFC4DE13481EC52 /* WALMerger.swift in Sources */,
+				5C768D6514AEBE9401369F9A /* WALWatcher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3F9D971FB67F414B93892FE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSET_CATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = FollowMyFriends/FollowMyFriends.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = FollowMyFriends/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.followmyfriends.app;
+				PRODUCT_NAME = FollowMyFriends;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4AFBF9380CAACE7C4EA0086A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		5B1D0A055150F0C165A927A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSET_CATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = FollowMyFriends/FollowMyFriends.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = FollowMyFriends/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.followmyfriends.app;
+				PRODUCT_NAME = FollowMyFriends;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F5180E0B55D99460FB53217B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C5C8FA7D36C0F55D0A75EC6 /* Build configuration list for PBXNativeTarget "FollowMyFriends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F9D971FB67F414B93892FE6 /* Debug */,
+				5B1D0A055150F0C165A927A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		224C4041A01FFAA0A115FA24 /* Build configuration list for PBXProject "FollowMyFriends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5180E0B55D99460FB53217B /* Debug */,
+				4AFBF9380CAACE7C4EA0086A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E594F444A10B91EE6E49C723 /* XCRemoteSwiftPackageReference "CocoaMQTT" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/emqx/CocoaMQTT.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E48C1FF39DF4FD3BA681BA4B /* CocoaMQTT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E594F444A10B91EE6E49C723 /* XCRemoteSwiftPackageReference "CocoaMQTT" */;
+			productName = CocoaMQTT;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4EE28D14709C632AF1ED95E5 /* Project object */;
+}

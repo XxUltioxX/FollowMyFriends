@@ -1,0 +1,43 @@
+name: FollowMyFriends
+options:
+  bundleIdPrefix: com.followmyfriends
+  deploymentTarget:
+    macOS: "14.0"
+  xcodeVersion: "16"
+  generateEmptyDirectories: true
+  transitivelyLinkDependencies: true
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+    ENABLE_HARDENED_RUNTIME: YES
+    SWIFT_STRICT_CONCURRENCY: complete
+
+packages:
+  CocoaMQTT:
+    url: https://github.com/emqx/CocoaMQTT.git
+    from: 2.1.9
+
+targets:
+  FollowMyFriends:
+    type: application
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - FollowMyFriends
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.followmyfriends.app
+        PRODUCT_NAME: FollowMyFriends
+        INFOPLIST_FILE: FollowMyFriends/Info.plist
+        CODE_SIGN_ENTITLEMENTS: FollowMyFriends/FollowMyFriends.entitlements
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: ""
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSET_CATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS: YES
+    dependencies:
+      - package: CocoaMQTT
+        product: CocoaMQTT
+    entitlements:
+      path: FollowMyFriends/FollowMyFriends.entitlements

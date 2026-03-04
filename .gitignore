@@ -1,0 +1,38 @@
+# Xcode build artifacts
+build/
+DerivedData/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+!*.xcworkspace/xcshareddata/swiftpm/
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+
+# Swift Package Manager cache
+.swiftpm/
+FollowMyFriends.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Sensitive files — never commit
+LocalStorage.key
+*.key
+*.pem
+*.p12
+*.cer
+
+# Python reference scripts
+*.py
+__pycache__/
+
+# Distribution artifacts
+dist/
+*.dmg
+
+# Design files
+design/
