@@ -17,12 +17,17 @@ FollowMyFriends is a native macOS menu-bar app that reads your friends' location
 
 <p align="center">
   <img src="screenshots/screenshot_dashboard.png" width="700" alt="Tracker Dashboard">
-  <br><em>Tracker Dashboard — live status for each tracked person with MQTT publish state</em>
+  <br><em>Tracker — live location cards with GPS accuracy, motion state, location label, and MQTT publish status</em>
 </p>
 
 <p align="center">
-  <img src="screenshots/screenshot_logs.png" width="700" alt="Live Log View">
-  <br><em>Live Log View — searchable, filterable real-time log with export support</em>
+  <img src="screenshots/screenshot_people.jpg" width="700" alt="People Management">
+  <br><em>People — manage tracked contacts, assign avatar colours, and view the live map + MQTT payload preview in the detail panel</em>
+</p>
+
+<p align="center">
+  <img src="screenshots/screenshot_settings.jpg" width="700" alt="Settings">
+  <br><em>Settings — MQTT connection, polling schedule with randomisation, Find My wait time, and night mode</em>
 </p>
 
 ---
